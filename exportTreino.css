@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --color-one: #1E90FF;
+    --color-two: #4F6780;
+    --color-three: #FFFFFF;
+    --color-four: #000000;
+}
+
+* { 
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.informacoes {
+    border: solid 1px;
+    display: grid;
+    grid-template-columns: 30vw 30vw 30vw;
+    grid-template-rows: 8vh 4vh 4vh 4vh;
+    grid-template-areas: 
+    "logo titulo titulo"
+    "logo aluno dataInicio"
+    "logo professor dataTroca"
+    "objetivo objetivo objetivo";
+    overflow: hidden;
+}
+
+label {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+p {
+    font-size: 1.2rem;
+    width: 100%;
+    word-wrap: break-word; /* Quebra a palavra se for muito longa */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adiciona reticências ao final do texto se ele for muito longo */
+    white-space: pre-wrap; /* Permite quebra de linha ao pressionar Enter */
+}
+
+.titulo { 
+    border-bottom: solid 1px;  
+    border-left: solid 1px;  
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: titulo;
+    background-color: var(--color-one);
+}
+
+.titulo h2 {
+    font-size: 2rem;
+    color: var(--color-three);
+}
+
+.aluno, .professor, .dataInicio, .dataTroca, .objetivo {
+    border-bottom: solid 1px;  
+    border-left: solid 1px;  
+    display: flex;
+    align-items: center;
+}
+
+.aluno {
+    grid-area: aluno;
+}
+
+.professor {
+    grid-area: professor;
+}
+
+.dataInicio {
+    grid-area: dataInicio;
+}
+
+.dataTroca {
+    grid-area: dataTroca;
+}
+
+.logo {
+    border-bottom: solid 1px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: logo;
+}
+
+.logo img {
+    max-width: 150px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+}
+
+.objetivo {
+    display: flex;
+    align-items: center;
+    grid-area: objetivo;
+}
+
+.objetivo label {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.fichas {
+    border: solid 1px;
+    height: 80vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.treinoA, .treinoB, .treinoC {
+    border-bottom: solid 1px;
+    display: grid;
+    grid-template-columns: 90vw;
+    grid-template-rows: 5vh 20vh;
+    width: 100%;
+}
+
+.tituloA, .tituloB, .tituloC {
+    border-bottom: solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-one);
+}
+
+.tituloA h2, .tituloB h2, .tituloC h2 {
+    font-size: 1.5rem;
+    color: var(--color-three);
+}
+
+.fichaA, .fichaB, .fichaC {
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}

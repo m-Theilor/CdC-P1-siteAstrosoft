@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --font-family-primary: "Roboto", sans-serif;
+    --font-family-secundary: "Rubik Mono One", monospace;
+    --font-family-terciary: "Concert One", sans-serif;
+    --color-one: #1f8fff;
+    --color-two: #000000;
+    --color-three: #1f48ff;
+    --color-four: #4f6780;
+    --color-five:#ffffffa4; 
+    --color-six:#ffffff; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--color-two);
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+main {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho--logo {
+    display: flex;
+    padding-left: 5%;
+}
+
+.conteudo--informacao-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+    border-radius: 6px;
+    background-color: var(--color-six);
+    text-decoration: none;
+    font-family: var(--font-family-primary);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-two);
+    width: 6vw;
+    height: 5vh;
+}
+
+.conteudo--informacao {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo--sobre {
+    height: 20vh;
+}
+
+.cabecalho--logo-txt {
+    font-family: var(--font-family-primary);
+    color: var(--color-six);
+    font-size: 1.2rem;
+}
+
+.cabecalho--logo-img {
+    max-width: 45px;
+    max-height: 45px;
+    width: auto;
+    height: auto;
+}
+
+.conteudo--sobre-txt {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    padding-top: 2%;
+    font-family: var(--font-family-primary);
+    font-size: 1rem;
+    color: var(--color-six);
+}
+
+.conteudo--informacao-txt {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.conteudo--informacao-quadro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    border: 1px solid var(--color-one);
+    border-radius: 10px;
+}
+
+.conteudo--informacao-txt__titulo {
+    height: 35%;
+    padding: 10% 0 0 2%;
+    display: flex;
+    font-family: var(--font-family-primary);
+    font-size: 3rem;
+    color: var(--color-one);
+}
+
+.conteudo--informacao-txt__paragrafo {
+    height: 65%;
+    padding: 2% 8% 0 2%;
+    display: flex;
+    font-family: var(--font-family-primary);
+    font-size: 1rem;
+    color: var(--color-six);
+}
+
+.conteudo--informacao-nav:hover {
+    background-color: var(--color-one);
+    color: var(--color-six);
+}

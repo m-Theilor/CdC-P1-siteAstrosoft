@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/av-3-style.css">
+    <title>Avaliação Física</title>
+</head>
+<body>
+    <div class="guia">
+        <p>Esta página coleta diversas medidas corporais específicas, como circunferências de pescoço, ombro, peito, braços, antebraços, punhos, cintura, abdômen, quadril, coxas, joelhos, panturrilhas e tornozelos. Essas medidas são importantes para monitorar o progresso do aluno em termos de ganho de massa muscular e perda de gordura, além de ajudar na personalização dos treinos e ajustes nutricionais.</p>
+    </div>
+    <div class="id-formulario">
+        <div class="id-formulario_medidas">    
+            <div class="pescoço">
+                <input id="pescoço" type="number" placeholder="Pescoço (cm)">
+            </div> 
+            <div class="ombro">     
+                <input id="ombro" type="number" placeholder="Ombro (cm)">
+            </div>
+            <div class="peito">   
+                <input id="peito" type="number" placeholder="Peito (cm)">
+            </div>
+            <div class="braçoDireito">   
+                <input id="braçoDireito" type="number" placeholder="Braço D. (cm)">
+            </div>
+            <div class="braçoEsquerdo">   
+                <input id="braçoEsquerdo" type="number" placeholder="Braço E. (cm)">
+            </div>
+            <div class="antebraçoDireito">   
+                <input id="antebraçoDireito" type="number" placeholder="Antebraço D. (cm)">
+            </div>
+            <div class="antebraçoEsquerdo">   
+                <input id="antebraçoEsquerdo" type="number" placeholder="Antebraço E. (cm)">
+            </div>
+            <div class="pulsoDireito">   
+                <input id="pulsoDireito" type="number" placeholder="Pulso D. (cm)">
+            </div>
+            <div class="pulsoEsquerdo">   
+                <input id="pulsoEsquerdo" type="number" placeholder="Pulso E. (cm)">
+            </div>
+            <div class="cintura">   
+                <input id="cintura" type="number" placeholder="Cintura (cm)">
+            </div>
+            <div class="abdomen">   
+                <input id="abdomen" type="number" placeholder="Abdômen (cm)">
+            </div>
+            <div class="quadril">   
+                <input id="quadril" type="number" placeholder="Quadril (cm)">
+            </div>
+            <div class="coxaProxDir">   
+                <input id="coxaProxDir" type="number" placeholder="Coxa Prox. D. (cm)">
+            </div>
+            <div class="coxaProxEsq">   
+                <input id="coxaProxEsq" type="number" placeholder="Coxa Prox. E. (cm)">
+            </div>
+            <div class="coxaMedialDir">   
+                <input id="coxaMedialDir" type="number" placeholder="Coxa Medial D. (cm)">
+            </div>
+            <div class="coxaMedialEsq">   
+                <input id="coxaMedialEsq" type="number" placeholder="Coxa Medial E. (cm)">
+            </div>
+            <div class="coxaDistalDir">   
+                <input id="coxaDistalDir" type="number" placeholder="Coxa Distal D. (cm)">
+            </div>
+            <div class="coxaDistalEsq">   
+                <input id="coxaDistalEsq" type="number" placeholder="Coxa Distal E. (cm)">
+            </div>
+            <div class="joelhoDir">   
+                <input id="joelhoDir" type="number" placeholder="Joelho D. (cm)">
+            </div>
+            <div class="joelhoEsq">   
+                <input id="joelhoEsq" type="number" placeholder="Joelho E. (cm)">
+            </div>
+            <div class="panturrilhaDir">   
+                <input id="panturrilhaDir" type="number" placeholder="Panturrilha D. (cm)">
+            </div>
+            <div class="panturrilhaEsq">   
+                <input id="panturrilhaEsq" type="number" placeholder="Panturrilha E. (cm)">
+            </div>
+            <div class="tornozeloDir">   
+                <input id="tornozeloDir" type="number" placeholder="Tornozelo D. (cm)">
+            </div>
+            <div class="tornozeloEsq">   
+                <input id="tornozeloEsq" type="number" placeholder="Tornozelo E. (cm)">
+            </div>
+        </div>
+        <div class="id-formulario--nav">
+            <a href="av-id-index-2.html">Voltar</a>
+            <button id="abrir" onclick="salvarDadosPagina3()">Gerar PDF</button>
+        </div>
+    </div>
+    
+    <script src="script-av-3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/av-2-style.css">
+    <title>Avaliação Física</title>
+</head>
+<body>
+    <div class="guia">
+        <p>Nesta página, são coletadas informações sobre a massa corporal, altura e medidas das dobras cutâneas em várias partes do corpo. Essas medições são usadas para calcular índices importantes como IMC (Índice de Massa Corporal), densidade corporal e percentual de gordura corporal. Esses resultados são fundamentais para avaliar a composição corporal do aluno e orientar o planejamento de treinos e dietas.</p>
+    </div>
+    <div class="id-formulario">
+        <div class="id-formulario_infGerais"> 
+            <div class="infGerais-quadro">
+                <div class="infGerais--titulo">
+                    <h2>Informações Gerais</h2>
+                </div>   
+                <div class="peso">
+                    <input id="peso" type="number" placeholder="Peso (kg)">
+                </div> 
+                <div class="altura">   
+                    <input id="altura" type="text" placeholder="Altura (cm)">
+                </div>
+                <div class="idade">   
+                    <input id="idade" type="text" placeholder="Idade">
+                </div>
+            </div>
+        </div>
+        
+        <div class="id-formulario_dobras">  
+            <div class="id-dobras--quadro">
+                <div class="id-formulario_dobras_titulo">
+                    <h2 class="titulo--dobras">Dobras Cutâneas</h2>
+                </div>  
+                <div class="subescapular">
+                    <label for="subescapular">Subescapular (mm)</label>
+                    <input id="subescapular" type="number">
+                </div> 
+                <div class="tricipital">
+                    <label for="tricipital">Tricipital (mm)</label>
+                    <input id="tricipital" type="number">
+                </div> 
+                <div class="lombar">
+                    <label for="lombar">Lombar (mm)</label>
+                    <input id="lombar" type="number">
+                </div> 
+                <div class="peitoral">
+                    <label for="peitoral">Peitoral (mm)</label>
+                    <input id="peitoral" type="number">
+                </div> 
+                <div class="axilar">
+                    <label for="axilar">Axilar-média (mm)</label>
+                    <input id="axilar" type="number">
+                </div> 
+                <div class="bicipital">   
+                    <label for="bicipital">Bicipital (mm)</label>
+                    <input id="bicipital" type="number">
+                </div>
+                <div class="supra">   
+                    <label for="supra">Supra ilíaca (mm)</label>
+                    <input id="supra" type="number">
+                </div>
+                <div class="abdominal">   
+                    <label for="abdominal">Abdominal (mm)</label>
+                    <input id="abdominal" type="number">
+                </div>    
+                <div class="coxa">
+                    <label for="coxa">Coxa (mm)</label>
+                    <input id="coxa" type="number">
+                </div>
+            </div>
+        </div>
+
+        <div class="resultados">
+            <div class="resultados-quadro">
+                <div class="resultadosTitulo">
+                    <h2>Resultados</h2>
+                </div>
+                <div class="resultadosCalculo">
+                    <div class="resultadosIMC">
+                        <p class="txt--result">IMC (kg/m²)</p>
+                        <p id="mostrarIMC"></p>
+                    </div>
+                    <div class="resultadosDensiCorporal">
+                        <p class="txt--result">Densidade Corporal (g/cm³)</p>
+                        <p id="mostrarDensidade"></p>
+                    </div>
+                    <div class="resultadosGordCorporal">
+                        <p class="txt--result">Gordura Corporal (%)</p>
+                        <p id="mostrarGordura"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <form class="id-formulario--nav">
+            <a href="av-id-index.html">Voltar</a>
+            <button class="id-formulario--nav_calcular" onclick="mostrarResultados()">Calcular</button>
+            <button type="submit">Continuar</button>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script-av-2.js"></script>
+</body>
+</html>

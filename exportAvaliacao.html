@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/exportAvaliacao_style.css">
+    <script src="exportAvaliacao-script.js"></script>
+    <title>pdf-avaliacao</title>
+</head>
+<body>
+    <div class="pagina1">
+        <div class="logo">
+            <img src="styles/img/logo-colmeia.svg" alt="logo do site">
+        </div>
+
+        <div class="titulo">
+            <h2>Informações do Aluno</h2>
+        </div>
+
+        <div class="nome">
+            <label>Nome:</label>
+            <p id="nomeAluno"></p>
+        </div>
+        <div class="sobrenome">
+            <label>Sobrenome: </label>
+            <p id="sobrenomeAluno"></p>
+        </div>
+        <div class="email">
+            <label>E-mail:</label>
+            <p id="emailAluno"></p>
+        </div>
+        <div class="telefone">
+            <label>Telefone:</label>
+            <p id="telefoneAluno"></p>
+        </div>
+        <div class="sexo">
+            <label>Sexo:</label>
+            <p id="sexoAluno"></p>
+        </div>
+        <div class="idade">
+            <label>Idade:</label>
+            <p id="idadeAluno">Idade:</p>
+        </div>
+        
+    </div>
+
+    <div class="pagina2">
+        <div class="titulo2">
+            <h2>Avaliação do Aluno</h2>
+        </div>
+        <div class="peso">
+            <label>Peso (kg):</label>
+            <p id="peso"></p>
+        </div>
+        <div class="altura">
+            <label>Altura (cm):</label>
+            <p id="altura"></p>
+        </div>
+        <div class="subercapular">
+            <label>Subercapular (mm):</label>
+            <p id="subercapular"></p>
+        </div>
+        <div class="tricipital">
+            <label>Tricipital (mm):</label>
+            <p id="tricipital"></p>
+        </div>
+        <div class="lombar">
+            <label>Lombar (mm):</label>
+            <p id="lombar"></p>
+        </div>
+        <div class="peitoral">
+            <label>Peitoral (mm):</label>
+            <p id="peitoral"></p>
+        </div>
+        <div class="axilar">
+            <label>Axilar (mm):</label>
+            <p id="axilar"></p>
+        </div>
+        <div class="bicipital">
+            <label>Bicipital (mm):</label>
+            <p id="bicipital"></p>
+        </div>
+        <div class="supra">
+            <label>Supra (mm):</label>
+            <p id="supra"></p>
+        </div>
+        <div class="abdominal">
+            <label>Abdominal (mm):</label>
+            <p id="abdominal"></p>
+        </div>
+        <div class="coxa">
+            <label>Coxa (mm):</label>
+            <p id="coxa"></p>
+        </div>
+    </div>
+
+    <div class="resultado">
+        <div class="imc">
+            <label>IMC (kg/m²):</label>
+            <p id="mostrarIMC"></p>
+        </div>
+        <div class="densidade">
+            <label>Densidade C. (g/cm³):</label>
+            <p id="mostrarDensidade"></p>
+        </div>
+        <div class="gordura">
+            <label>Gordura C. (%):</label>
+            <p id="mostrarGordura"></p>
+        </div>
+    </div>
+
+    <div class="pagina3">
+        <div class="titulo3">
+            <h2>Medidas Perimétricas</h2>
+        </div>
+        <div class="pescoço">
+            <label>Pescoço (cm):</label>
+            <p id="pescoço"></p>
+        </div>
+        <div class="ombro">
+            <label>Ombro (cm):</label>
+            <p id="ombro"></p>
+        </div>
+        <div class="peito">
+            <label>Peito (cm):</label>
+            <p id="peito"></p>
+        </div>
+        <div class="braçoDireito">
+            <label>Braço Direito (cm):</label>
+            <p id="braçoDireito"></p>
+        </div>
+        <div class="braçoEsquerdo">
+            <label>Braço Esquerdo (cm):</label>
+            <p id="braçoEsquerdo"></p>
+        </div>
+        <div class="antebraçoDireito">
+            <label>Antebraço Direito (cm):</label>
+            <p id="antebraçoDireito"></p>
+        </div>
+        <div class="antebraçoEsquerdo">
+            <label>Antebraço Esquerdo (cm):</label>
+            <p id="antebraçoEsquerdo"></p>
+        </div>
+        <div class="pulsoDireito">
+            <label>Pulso Direito (cm):</label>
+            <p id="pulsoDireito"></p>
+        </div>
+        <div class="pulsoEsquerdo">
+            <label>Pulso Esquerdo (cm):</label>
+            <p id="pulsoEsquerdo"></p>
+        </div>
+        <div class="cintura">
+            <label>Cintura (cm):</label>
+            <p id="cintura"></p>
+        </div>
+        <div class="abdomen">
+            <label>Abdomen (cm):</label>
+            <p id="abdomen"></p>
+        </div>
+        <div class="quadril">
+            <label>Quadril (cm):</label>
+            <p id="quadril"></p>
+        </div>
+        <div class="coxaProxDir">
+            <label>Coxa Prox Dir (cm):</label>
+            <p id="coxaProxDir"></p>
+        </div>
+        <div class="coxaProxEsq">
+            <label>Coxa Prox Esq (cm):</label>
+            <p id="coxaProxEsq"></p>
+        </div>
+        <div class="coxaMedialDir">
+            <label>Coxa Medial Dir (cm):</label>
+            <p id="coxaMedialDir"></p>
+        </div>
+        <div class="coxaMedialEsq">
+            <label>Coxa Medial Esq (cm):</label>
+            <p id="coxaMedialEsq"></p>
+        </div>
+        <div class="coxaDistalDir">
+            <label>Coxa Distal Dir (cm):</label>
+            <p id="coxaDistalDir"></p>
+        </div>
+        <div class="coxaDistalEsq">
+            <label>Coxa Distal Esq (cm):</label>
+            <p id="coxaDistalEsq"></p>
+        </div>
+        <div class="joelhoDir">
+            <label>Joelho Dir (cm):</label>
+            <p id="joelhoDir"></p>
+        </div>
+        <div class="joelhoEsq">
+            <label>Joelho Esq (cm):</label>
+            <p id="joelhoEsq"></p>
+        </div>
+        <div class="panturrilhaDir">
+            <label>Panturrilha Dir (cm):</label>
+            <p id="panturrilhaDir"></p>
+        </div>
+        <div class="panturrilhaEsq">
+            <label>Panturrilha Esq (cm):</label>
+            <p id="panturrilhaEsq"></p>
+        </div>
+        <div class="tornozeloDir">
+            <label>Tornozelo Dir (cm):</label>
+            <p id="tornozeloDir"></p>
+        </div>
+        <div class="tornozeloEsq">
+            <label>Tornozelo Esq (cm):</label>
+            <p id="tornozeloEsq"></p>
+        </div>
+
+    </div>
+
+</body>
+</html>

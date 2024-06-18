@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/av-style.css">
+    <title>Avaliação Física</title>
+</head>
+<body>
+    <div class="guia">
+        <p>Esta página coleta informações básicas do aluno, como nome, sobrenome, idade, sexo, telefone e e-mail.</p>
+        <p>Essas informações são essenciais para identificar o aluno e manter um contato eficiente.</p>
+        <p>Além disso, a idade e o sexo são dados importantes para a interpretação dos resultados da avaliação física, pois diferentes faixas etárias e gêneros possuem parâmetros distintos.</p>
+    </div>
+    <form class="id-formulario">
+        <div class="id-formulario_nome_sobrenome">    
+            <div class="nome">
+                <label for="nome">Nome</label>
+                <input id="nome" type="text">
+            </div> 
+            <div class="sobrenome">   
+                <label for="sobrenome">Sobrenome</label>
+                <input id="sobrenome" type="text">
+            </div>
+        </div>
+        
+        <div class="id-formulario_idade_sexo">    
+            <div class="idade">
+                <label for="idade">Idade</label>
+                <input id="idade" type="number">
+            </div> 
+            <div class="sexo">   
+                <label for="sexo">Sexo</label>
+                <select id="sexo">
+                    <option value="feminino">Feminino</option>
+                    <option value="masculino">Masculino</option>
+                </select>
+            </div>
+        </div>    
+
+        <div class="id-formulario_telefone_email">    
+            <div class="telefone">
+                <input id="telefone" type="number" placeholder="Telefone">
+            </div> 
+            <div class="email">   
+                <input id="email" type="email" placeholder="E-mail">
+            </div>
+        </div>
+        <div class="id-formulario--nav">
+            <a href="hm-index.html">Voltar</a>
+            <button type="submit">Continuar</button>
+        </div>
+    </form>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script-av.js"></script>
+
+</body>
+</html>

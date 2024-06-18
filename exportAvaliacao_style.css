@@ -1,0 +1,709 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --color-one: #1E90FF;
+    --color-two: #4F6780;
+    --color-three: #FFFFFF;
+    --color-four: #000000;
+}
+
+* { 
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-three);
+    height: 100vh;
+}
+
+label {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+
+.pagina1 {
+    border: solid 1px;
+    width: 99vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3,33vw);
+    grid-template-rows: 8vh 4vh 4vh 4vh;
+    grid-template-areas: 
+    "logo titulo titulo"
+    "logo nome sobrenome"
+    "logo email email"
+    "telefone sexo idade";
+}
+
+img {
+    max-width: 150px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    grid-area: logo;
+}
+
+.nome {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    grid-area: nome;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sobrenome {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    grid-area: sobrenome;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.email {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    grid-area: email;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.email label {
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}
+
+
+.telefone {
+    width: 100%;
+    height: 100%;
+    border-right: solid 1px;
+    grid-area: telefone;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.sexo {
+    width: 100%;
+    height: 100%;
+    border-right: solid 1px;
+    grid-area: sexo;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.idade {
+    width: 100%;
+    height: 100%;
+    grid-area: idade;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+   
+}
+
+.titulo {
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--color-one);
+}
+
+.titulo h2 {
+    font-size: 2rem;
+    color: var(--color-three);
+}
+
+.pagina2 {
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    width: 99vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3,33vw);
+    grid-template-rows: repeat(5,5vh);
+    grid-template-areas: 
+    "titulo2 titulo2 titulo2"
+    "peso altura altura"
+    "subercapular tricipital lombar"
+    "peitoral axilar bicipital"
+    "supra abdominal coxa";
+}
+
+.titulo2 {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    border-left: solid 1px;
+    grid-area: titulo2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-one);
+}
+
+.titulo2 h2 {
+    font-size: 1.5rem;
+    color: var(--color-three);
+}
+
+.peso {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    grid-area: peso;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.altura {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    grid-area: altura;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.altura label {
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}
+
+.subercapular {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    grid-area: subercapular;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.tricipital {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    grid-area: tricipital;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.lombar {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    grid-area: lombar;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.peitoral {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    grid-area: peitoral;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.axilar {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    grid-area: axilar;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.bicipital {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-right: solid 1px;    
+    grid-area: bicipital;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.supra {
+    width: 100%;
+    height: 100%;
+    border-right: solid 1px;
+    grid-area: supra;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.abdominal {
+    width: 100%;
+    height: 100%;
+    border-right: solid 1px;
+    grid-area: abdominal;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.coxa {
+    width: 100%;
+    height: 100%;
+    border-right: solid 1px;
+    grid-area: coxa;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.resultado {
+    width: 99vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3,33vw);
+    grid-template-rows: 8vh;
+    grid-template-areas: 
+    "imc densidade gordura";
+    background-color: var(--color-two);
+}
+
+.resultado label {
+    font-size: 1rem;
+    color: var(--color-three);
+    font-weight: 700;
+}
+
+.resultado p {
+    font-size: 1rem;
+    color: var(--color-three);
+    font-weight: 400;
+}
+
+.imc {
+    width: 100%;
+    height: 100%;
+    border-top: solid 1px;
+    border-right: solid 1px;
+    border-left: solid 1px;
+    grid-area: imc;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.densidade {
+    width: 100%;
+    height: 100%;
+    border-top: solid 1px;
+    border-right: solid 1px;
+    grid-area: densidade;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.gordura {
+    width: 100%;
+    height: 100%;
+    border-top: solid 1px;
+    border-right: solid 1px;
+    grid-area: gordura;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pagina3 {
+    border: 1px solid;
+    width: 99vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3,33vw);
+    grid-template-rows: repeat(9,5vh);
+    grid-template-areas: 
+    "titulo3 titulo3 titulo3"
+    "pescoço ombro peito"
+    "braçoDir braçoEsq antebraçoDir"
+    "antebraçoEsq pulsoDir pulsoEsq"
+    "cintura abdomem quadril"
+    "coxaProxDir coxaProxEsq coxaMedialDir"
+    "coxaMedialEsq coxaDistalDir coxaDistalEsq"
+    "joelhoDir joelhoEsq panturrilhaDir"
+    "panturrilhaEsq tornozeloDir tornozeloEsq";
+}
+
+.titulo3 {
+    width: 100%;
+    height: 100%;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    border-left: solid 1px;
+    grid-area: titulo3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-one);
+}
+
+.titulo3 h2 {
+    font-size: 1.5rem;
+    color: var(--color-three);
+}
+
+.pescoço {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    grid-area: pescoço;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.ombro {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    grid-area: ombro;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.peito {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    grid-area: peito;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.braçoDireito {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    grid-area: braçoDir;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.braçoEsquerdo {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    grid-area: braçoEsq;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.antebraçoDireito {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    grid-area: antebraçoDir;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.antebraçoEsquerdo {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    grid-area: antebraçoEsq;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.pulsoDireito {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    grid-area: pulsoDir;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.pulsoEsquerdo {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    grid-area: pulsoEsq;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.cintura {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    grid-area: cintura;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.abdomen {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    grid-area: abdomem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.quadril {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    grid-area: quadril;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.coxaProxDir {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    grid-area: coxaProxDir;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.coxaProxEsq {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    grid-area: coxaProxEsq;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.coxaMedialDir {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    grid-area: coxaMedialDir;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.coxaMedialEsq {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    grid-area: coxaMedialEsq;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.coxaDistalDir {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    grid-area: coxaDistalDir;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.coxaDistalEsq {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    grid-area: coxaDistalEsq;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.joelhoDir {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    grid-area: joelhoDir;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.joelhoEsq {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    grid-area: joelhoEsq;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.panturrilhaDir {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    grid-area: panturrilhaDir;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.panturrilhaEsq {
+    width: 100%;
+    height: 100%;
+    border-right: solid 1px;
+    grid-area: panturrilhaEsq;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.tornozeloDir {
+    width: 100%;
+    height: 100%;
+    border-right: solid 1px;
+    grid-area: tornozeloDir;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.tornozeloEsq {
+    width: 100%;
+    height: 100%;
+    border-right: solid 1px;
+    grid-area: tornozeloEsq;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+

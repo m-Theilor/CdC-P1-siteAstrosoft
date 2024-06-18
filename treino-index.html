@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/treino-style.css">
+    <title>Ficha de Treino</title>
+</head>
+<body>
+    
+    <div class="primario">
+        <div class="logo">
+            <img src="styles/img/logo.svg" alt="logo do grupo" class="logo--img">
+            <p class="logo--txt">ASTRO<span>SOFT</span></p>
+        </div>
+        <form class="form">
+            <input type="text" id="aluno" placeholder="Aluno:">
+            <input type="text" id="professor" placeholder="Professor:">
+            <input type="date" id="dataInicio" placeholder="Data de Início:">
+            <input type="date" id="dataTroca" placeholder="Data de Troca:">
+            <input type="text" id="objetivo" placeholder="Objetivo:">
+        </form>
+    </div>
+               
+    <form class="fichas--geral">
+        <div class="ficha">
+            <div class="ficha--titulo"> 
+                <h1>TREINO - A</h1>
+            </div>
+            <div class="ficha--treino">
+                <textarea name="treinoA" id="treinoA" placeholder="Monte o seu treino A..."></textarea>
+            </div>
+        </div>
+
+        <div class="ficha">
+            <div class="ficha--titulo"> 
+                <h1>TREINO - B</h1>
+                </div>
+            <div class="ficha--treino">
+                <textarea name="treinoB" id="treinoB" placeholder="Monte o seu treino B..."></textarea>
+            </div>
+        </div>
+
+        <div class="ficha">
+            <div class="ficha--titulo"> 
+                <h1>TREINO - C</h1>
+            </div>
+            <div class="ficha--treino">
+                <textarea name="treinoC" id="treinoC" placeholder="Monte o seu treino C..."></textarea>
+            </div>
+        </div>
+    </form>
+    
+    <footer class="nav">
+        <a class="nav--voltar" href="hm-index.html">VOLTAR</a>
+        <button id="abrir" onclick="salvarDadosTreino()">Gerar PDF</button>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script-treino.js"></script>
+</body>
+</html>
