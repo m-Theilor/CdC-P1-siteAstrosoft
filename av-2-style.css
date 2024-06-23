@@ -95,7 +95,7 @@ select {
     "nav nav";
     height: 100vh; 
     width: 70vw;
-    background-image: url(img/fundo-av-2-img.png);
+    background-image: url(fundo-av-2-img.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
